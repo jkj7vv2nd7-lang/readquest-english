@@ -84,3 +84,11 @@
 
 自動／手動／コード確認の区分と公開手順は `docs/RELEASE_CHECKLIST.md` に集約した。
 コントラスト計算の対象ペアと結果：本文 #23272f/白＝14.97、補助 #6b7280/白＝4.83、ボタン白/#1d7a4f＝5.32、警告 #b3261e/白＝6.54。対象外の配色の適合は保証しない。
+
+### 公開検証（GitHub Pages）
+
+- リポジトリ作成＋push：✅ https://github.com/jkj7vv2nd7-lang/readquest-english
+- CI（npm ci → npm test → npm run build）：✅ ビルドジョブ成功（テスト・ビルドとも通過）
+- 初回デプロイ失敗の原因：Pages未有効化（deploy-pagesが404）→ APIで `build_type=workflow` を有効化し再実行で成功
+- 公開URL疎通：✅ `https://jkj7vv2nd7-lang.github.io/readquest-english/` 200、JS資産 200（351,416バイト）
+- 詳細手順は `docs/DEPLOY.md`

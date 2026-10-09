@@ -2,13 +2,18 @@
 
 **英単語から、英語で本を読む力へ。**
 
+公開URL：https://jkj7vv2nd7-lang.github.io/readquest-english/
+
 日本語を母語とする学習者向けの英語学習アプリ。単語の意味・発音・スペルから始め、
 短文→段落→説明文へと段階を上げ、最終的に洋書・英字新聞を自力で読める力を育てます。
 React + TypeScript + Vite。スマートフォン対応・PWA対応。
 
 ## 起動・確認方法
 
-前提：Node.js 20以上（動作確認：Node v24 / npm 11 / Windows）。
+公開URLを開くのが最も簡単です。なお `index.html` のダブルクリックでは起動できません
+（ESモジュールとService Workerが `http(s)` 前提のため。詳細は `docs/DEPLOY.md`）。
+
+ローカルで動かす場合。前提：Node.js 20以上（動作確認：Node v24 / npm 11 / Windows）。
 
 ```cmd
 cd C:\OpenCord\english
@@ -63,4 +68,5 @@ PowerShellでは `npm.ps1` の実行ポリシーで失敗する場合がある�
 - `docs/ROADMAP.md`：今後の作業
 - `docs/VOCABULARY.md`：語彙データ台帳（件数・選定方針・監査結果）
 - `docs/RELEASE_CHECKLIST.md`：公開前チェックリスト（自動／コード確認／手動の区分）
+- `docs/DEPLOY.md`：GitHub Pages公開手順とURL
 - `docs/GUIDE.md`：利用者向け操作ガイド
