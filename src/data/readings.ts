@@ -1,0 +1,295 @@
+// ReadQuest English — 読解教材（自作・10編：各レベル2編）
+import type { ReadingEntry } from '../types';
+
+const SRC = 'ReadQuest編集部（自作）';
+const LIC = 'CC-BY-4.0（ReadQuest編集部作・改変再配布可）';
+
+export const READINGS: ReadingEntry[] = [
+  {
+    id: 'r1',
+    title: 'My Morning',
+    titleJa: 'わたしの朝',
+    level: 1,
+    body: [
+      'I get up at six every morning.',
+      'I wash my face and eat breakfast with my family.',
+      'After breakfast, I read an English book for ten minutes.',
+    ],
+    bodyJa: [
+      '私は毎朝6時に起きます。',
+      '顔を洗い、家族と朝食を食べます。',
+      '朝食の後、英語の本を10分読みます。',
+    ],
+    vocab: [
+      { word: 'get up', meaning: '起きる' },
+      { word: 'wash', meaning: '洗う' },
+      { word: 'family', meaning: '家族' },
+    ],
+    questions: [
+      { q: 'What does the writer do after breakfast?', choices: ['Reads an English book', 'Watches TV', 'Goes back to sleep'], answer: 0, explanation: '本文3文目に "I read an English book" とあります。' },
+      { q: 'What time does the writer get up?', choices: ['At five', 'At six', 'At seven'], answer: 1, explanation: '本文1文目 "at six" が根拠です。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r2',
+    title: 'A Trip to Kyoto',
+    titleJa: '京都への旅',
+    level: 2,
+    body: [
+      'Last spring, my family visited Kyoto.',
+      'We saw many beautiful temples and enjoyed green tea.',
+      'I bought a small picture book at a shop near the station.',
+      'I want to visit again and learn more about its history.',
+    ],
+    bodyJa: [
+      '昨年の春、家族で京都を訪れました。',
+      '美しいお寺をたくさん見て、抹茶を楽しみました。',
+      '駅の近くの店で小さな絵本を買いました。',
+      'また訪れて、その歴史をもっと学びたいです。',
+    ],
+    vocab: [
+      { word: 'visit', meaning: '訪れる' },
+      { word: 'temple', meaning: '寺' },
+      { word: 'history', meaning: '歴史' },
+    ],
+    questions: [
+      { q: 'When did the family visit Kyoto?', choices: ['Last summer', 'Last spring', 'Last winter'], answer: 1, explanation: '"Last spring" と明記されています。' },
+      { q: 'What did the writer buy?', choices: ['Green tea', 'A temple map', 'A small picture book'], answer: 2, explanation: '3文目 "a small picture book" が根拠です。' },
+      { q: 'What does the writer want to do?', choices: ['Live in Kyoto', 'Visit again and learn history', 'Open a shop'], answer: 1, explanation: '最終文が根拠です。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r3',
+    title: 'The Power of Habits',
+    titleJa: '習慣の力',
+    level: 3,
+    body: [
+      'Big goals are easy to dream about, but hard to continue.',
+      'Small habits make a big difference. Reading ten pages a day becomes twelve books a year.',
+      'If you miss a day, do not blame yourself. Just start again the next morning.',
+      'Effort grows when the habit is easy, clear, and fun.',
+    ],
+    bodyJa: [
+      '大きな目標は夢見るのは簡単ですが、続けるのは難しいものです。',
+      '小さな習慣が大きな違いを生みます。1日10ページの読書は、1年で12冊になります。',
+      '1日さぼっても自分を責めないでください。次の朝また始めればよいのです。',
+      '習慣が「簡単・明確・楽しい」とき、努力は育ちます。',
+    ],
+    vocab: [
+      { word: 'habit', meaning: '習慣' },
+      { word: 'effort', meaning: '努力' },
+      { word: 'continue', meaning: '続ける' },
+      { word: 'difference', meaning: '違い' },
+    ],
+    questions: [
+      { q: 'What happens if you read ten pages a day?', choices: ['You finish twelve books a year', 'You finish ten books a month', 'You read one book a day'], answer: 0, explanation: '2段落目の計算が根拠です。' },
+      { q: 'What should you do if you miss a day?', choices: ['Quit the habit', 'Blame yourself', 'Start again the next morning'], answer: 2, explanation: '3段落目の助言が根拠です。' },
+      { q: 'When does effort grow?', choices: ['When the habit is easy, clear, and fun', 'When the goal is very big', 'When you never rest'], answer: 0, explanation: '最終段落が根拠です。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r4',
+    title: 'Why Libraries Matter',
+    titleJa: '図書館が大切な理由',
+    level: 3,
+    body: [
+      'A library is more than a building full of books.',
+      'It is a place where anyone can learn for free.',
+      'Students study there, parents read with children, and older people enjoy newspapers.',
+      'When we borrow books and share ideas, our town becomes stronger.',
+    ],
+    bodyJa: [
+      '図書館は、本でいっぱいの建物以上のものです。',
+      '誰でも無料で学べる場所です。',
+      '学生は勉強し、親は子どもと読み、年配の人は新聞を楽しみます。',
+      '本を借りて考えを共有すると、町はより強くなります。',
+    ],
+    vocab: [
+      { word: 'library', meaning: '図書館' },
+      { word: 'borrow', meaning: '借りる' },
+      { word: 'share', meaning: '共有する' },
+    ],
+    questions: [
+      { q: 'What is a library, according to the text?', choices: ['Only a book store', 'A place where anyone can learn for free', 'A school for children'], answer: 1, explanation: '2段落目が根拠です。' },
+      { q: 'What happens when we share ideas?', choices: ['Books disappear', 'Our town becomes stronger', 'Libraries close'], answer: 1, explanation: '最終段落が根拠です。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r5',
+    title: 'Reading News in English',
+    titleJa: '英語でニュースを読む',
+    level: 4,
+    body: [
+      'Many learners feel afraid of English newspapers. The sentences are long, and the words are new.',
+      'A good first step is to guess the meaning from context before using a dictionary.',
+      'Read the headline, look at the picture, and ask: who did what, and why does it matter?',
+      'With this habit, articles slowly change from walls into doors.',
+    ],
+    bodyJa: [
+      '多くの学習者は英字新聞を怖く感じます。文は長く、単語は新しいからです。',
+      '良い第一歩は、辞書を使う前に文脈から意味を推測することです。',
+      '見出しを読み、写真を見て、「誰が何をしたのか、なぜ重要なのか」と問いましょう。',
+      'この習慣で、記事は少しずつ「壁」から「扉」に変わります。',
+    ],
+    vocab: [
+      { word: 'article', meaning: '記事' },
+      { word: 'context', meaning: '文脈' },
+      { word: 'guess', meaning: '推測する' },
+    ],
+    questions: [
+      { kind: 'detail', q: 'What is the good first step?', choices: ['Memorize all words first', 'Guess meaning from context before using a dictionary', 'Skip headlines'], answer: 1, explanation: '2段落目が根拠です。' },
+      { kind: 'detail', q: 'What should readers ask?', choices: ['Who did what, and why it matters', 'How many ads there are', 'What the paper costs'], answer: 0, explanation: '3段落目が根拠です。' },
+      { kind: 'inference', q: 'What does the last sentence mean?', choices: ['Articles become easier to enter', 'Doors are walls', 'Newspapers disappear'], answer: 0, explanation: '"walls into doors" は比喩で、読みやすくなる意味です。字面ではなく意図を推論する問題です。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r6',
+    title: 'Facts, Opinions, and Evidence',
+    titleJa: '事実・意見・証拠',
+    level: 5,
+    body: [
+      'To read books and news well, we must tell facts from opinions.',
+      'A fact can be checked. An opinion shows what someone thinks.',
+      'Writers sometimes insist on their claims without strong evidence.',
+      'Good readers ask for reasons, compare ideas, and discuss them with others.',
+    ],
+    bodyJa: [
+      '本やニュースをよく読むには、事実と意見を見分けなければなりません。',
+      '事実は確かめられます。意見は誰かの考えを示します。',
+      '筆者が強い証拠なしに主張を言い張ることもあります。',
+      '良い読み手は理由を求め、考えを比べ、他者と話し合います。',
+    ],
+    vocab: [
+      { word: 'fact', meaning: '事実' },
+      { word: 'opinion', meaning: '意見' },
+      { word: 'evidence', meaning: '証拠' },
+      { word: 'insist', meaning: '主張する' },
+    ],
+    questions: [
+      { kind: 'detail', q: 'What is a fact?', choices: ['Something that can be checked', 'Something everyone likes', 'Something new'], answer: 0, explanation: '2段落目前半が根拠です。' },
+      { kind: 'detail', q: 'What do good readers do?', choices: ['Believe every claim', 'Ask for reasons and compare ideas', 'Avoid discussion'], answer: 1, explanation: '最終段落が根拠です。' },
+      { kind: 'intent', q: 'Why does the writer mention claims without strong evidence?', choices: ['To praise such writers', 'To warn readers to ask for reasons', 'To end the text quickly'], answer: 1, explanation: '3段落目は注意喚起の例で、最終段落の「理由を求めよ」につながる筆者の意図です。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r7',
+    title: 'My Small Cat',
+    titleJa: '小さな猫',
+    level: 1,
+    body: [
+      'I have a small cat. Her name is Mimi.',
+      'She plays with me every morning.',
+      'She is happy when the sun shines.',
+    ],
+    bodyJa: [
+      '小さな猫を飼っています。名前はミミです。',
+      '彼女は毎朝私と遊びます。',
+      '太陽が出るとうれしそうです。',
+    ],
+    vocab: [
+      { word: 'small', meaning: '小さい' },
+      { word: 'play', meaning: '遊ぶ' },
+      { word: 'morning', meaning: '朝' },
+    ],
+    questions: [
+      { kind: 'detail', q: 'What is the name of the cat?', choices: ['Momo', 'Mimi', 'Milk'], answer: 1, explanation: '本文1文目 "Her name is Mimi" が根拠です。' },
+      { kind: 'detail', q: 'When does the cat play with the writer?', choices: ['Every morning', 'Every night', 'Every Sunday'], answer: 0, explanation: '本文2文目 "every morning" が根拠です。' },
+      { kind: 'vocab', q: 'What does "play" mean here?', choices: ['遊ぶ', '演奏する', '試合する'], answer: 0, explanation: '猫が相手なので「遊ぶ」の意味です。文脈で使い分けましょう。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r8',
+    title: 'A Day at the Library',
+    titleJa: '図書館の一日',
+    level: 2,
+    body: [
+      'Last Saturday, I went to the library because I wanted new books.',
+      'I borrowed two English books and enjoyed reading there for two hours.',
+      'I often visit the library, and the staff always help me kindly.',
+    ],
+    bodyJa: [
+      '先週の土曜日、新しい本が欲しかったので図書館へ行きました。',
+      '英語の本を2冊借りて、2時間そこで読書を楽しみました。',
+      'よく図書館を訪れます。職員の方々はいつも親切に助けてくれます。',
+    ],
+    vocab: [
+      { word: 'library', meaning: '図書館' },
+      { word: 'borrow', meaning: '借りる' },
+      { word: 'enjoy', meaning: '楽しむ' },
+    ],
+    questions: [
+      { kind: 'detail', q: 'Why did the writer go to the library?', choices: ['To meet friends', 'To get new books', 'To return a map'], answer: 1, explanation: '本文1文目 "I wanted new books" が根拠です。' },
+      { kind: 'detail', q: 'How long did the writer read there?', choices: ['For one hour', 'For two hours', 'For three hours'], answer: 1, explanation: '本文2文目 "for two hours" が根拠です。' },
+      { kind: 'gist', q: 'What is this story mainly about?', choices: ['A fun day of reading at the library', 'How to build a library', 'A trip to buy books'], answer: 0, explanation: '全体が「図書館での楽しい読書の一日」です。細部ではなく大意を取る練習です。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r9',
+    title: 'Our Town Newspaper',
+    titleJa: '町の新聞',
+    level: 4,
+    body: [
+      'Our town has a small weekly newspaper. Volunteers write most of the articles.',
+      'Last month, an article claimed that the old park would close. Many readers were surprised.',
+      'I evaluated the facts: the town only plans to fix the benches, not to close the park.',
+      'Reliable news shows evidence. Before we share a story, we should check for bias.',
+    ],
+    bodyJa: [
+      '私たちの町には小さな週刊新聞があります。記事の多くはボランティアが書いています。',
+      '先月、古い公園が閉まるという記事が出て、多くの読者が驚きました。',
+      '事実を確かめると、町はベンチを直す計画だけで、公園を閉めるわけではありませんでした。',
+      '信頼できるニュースは証拠を示します。話を広める前に、偏りがないか確かめるべきです。',
+    ],
+    vocab: [
+      { word: 'article', meaning: '記事' },
+      { word: 'evaluate', meaning: '評価する' },
+      { word: 'reliable', meaning: '信頼できる' },
+      { word: 'bias', meaning: '偏り' },
+    ],
+    questions: [
+      { kind: 'detail', q: 'What did the article claim?', choices: ['That the park would close', 'That a new park would open', 'That volunteers would quit'], answer: 0, explanation: '2段落目 "the old park would close" が根拠です。' },
+      { kind: 'inference', q: 'What is the truth about the park?', choices: ['It will close soon', 'Only the benches will be fixed', 'It was sold last month'], answer: 1, explanation: '3段落目から「閉鎖ではなくベンチ修理」と推論できます。記事の主張と事実のずれを読み取る問題です。' },
+      { kind: 'intent', q: 'Why does the writer tell this story?', choices: ['To close the park', 'To ask readers to check facts before sharing', 'To end the newspaper'], answer: 1, explanation: '最終段落の助言が筆者の意図です。出来事の紹介自体が目的ではありません。' },
+    ],
+    source: SRC, license: LIC,
+  },
+  {
+    id: 'r10',
+    title: 'Reading Between the Lines',
+    titleJa: '行間を読む',
+    level: 5,
+    body: [
+      'Every text carries more than facts. A single metaphor can change how we see a problem.',
+      'When a writer calls doubt a wall, readers feel blocked. When doubt becomes a door, they look for a way through.',
+      'Ambiguous words are not always bad. From a different perspective, they invite us to think.',
+      'Good readers stay critical, compare coherent ideas, and ask what the writer implies.',
+    ],
+    bodyJa: [
+      'どんな文章も事実以上のものを運びます。1つの比喩が問題の見方を変えることがあります。',
+      '疑いを壁と呼べば読み手は行き詰まりを感じ、扉と呼べば通り道を探します。',
+      '曖昧な言葉は常に悪いわけではありません。違う観点からは考えるよう誘います。',
+      '良い読み手は批判的であり、一貫した考えを比べ、筆者がほのめかすものを問います。',
+    ],
+    vocab: [
+      { word: 'metaphor', meaning: '比喩' },
+      { word: 'ambiguous', meaning: '曖昧な' },
+      { word: 'perspective', meaning: '観点' },
+      { word: 'coherent', meaning: '一貫した' },
+    ],
+    questions: [
+      { kind: 'gist', q: 'What is the main message of this text?', choices: ['Words shape how we think, so read actively', 'Walls are better than doors', 'Facts do not matter'], answer: 0, explanation: '全体の要旨は「言葉は思考を形づくる。能動的に読もう」です。' },
+      { kind: 'inference', q: 'What can we infer about ambiguous words?', choices: ['They should always be removed', 'They can invite deeper thought', 'They have no meaning'], answer: 1, explanation: '3段落目 "they invite us to think" からの推論です。' },
+      { kind: 'intent', q: 'What does the writer want readers to do?', choices: ['Believe every metaphor', 'Compare ideas and ask what is implied', 'Stop reading news'], answer: 1, explanation: '最終段落の呼びかけが筆者の意図です。' },
+      { kind: 'vocab', q: 'What does "critical" mean in the last paragraph?', choices: ['批判的な', '重大な'], answer: 0, explanation: 'ここでは読み手の姿勢として「批判的な（吟味する）」の意味です。w263も参照。' },
+    ],
+    source: SRC, license: LIC,
+  },
+];
